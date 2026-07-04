@@ -2,9 +2,7 @@
 
 > AI-powered CV tailoring that turns your existing CV plus any job description into a truthful, ATS-optimized application in seconds.
 
-<video src="https://raw.githubusercontent.com/RanaAmmarAhmad/aptivocv/main/public/aptivo-demo.mp4" controls="controls" muted="muted" playsinline width="100%">
-  Your browser does not support the video tag. <a href="https://github.com/RanaAmmarAhmad/aptivocv/blob/main/public/aptivo-demo.mp4">Watch the demo</a>.
-</video>
+<video src="public/aptivo-demo.mp4" controls>
 
 **[Live site](https://aptivocv.lovable.app)**
 
