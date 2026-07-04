@@ -3,7 +3,7 @@
 Aptivo is a TanStack Start app for tailoring a CV to a job description with Supabase auth, Supabase-backed storage, and AI Gateway-powered text generation/OCR.
 
 ## Demo
-
+<img src="public/aptivo-demo-poster.jpg">
 🎥 **Demo Video**
 
 [Watch Aptivo Demo](https://github.com/RanaAmmarAhmad/aptivocv/blob/main/public/aptivo-demo.mp4)
