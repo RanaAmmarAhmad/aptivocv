@@ -2,11 +2,11 @@
 
 Aptivo is a TanStack Start app for tailoring a CV to a job description with Supabase auth, Supabase-backed storage, and AI Gateway-powered text generation/OCR.
 
-## Screenshots
+## Demo
 
-| Landing | Auth |
-| --- | --- |
-| ![Landing page screenshot](public/screenshots/landing.png) | ![Auth page screenshot](public/screenshots/auth.png) |
+<video controls src="public/aptivo-demo.mp4" poster="public/aptivo-demo-poster.jpg" style="width:100%; border-radius:16px;">
+  Your browser does not support the video tag.
+</video>
 
 ## Tech Stack
 
@@ -30,12 +30,12 @@ npm install
 Create a `.env.local` at the project root with:
 
 ```env
-SUPABASE_PROJECT_ID="vbczmnoselectzxxuoap"
-SUPABASE_PUBLISHABLE_KEY="sb_publishable_-b_3g3ccLS32wKZDWOahMg_tSoD6oDM"
-SUPABASE_URL="https://c--9b419d3e-0546-4e34-890a-f90cec875afd-prod.lovable.cloud"
-VITE_SUPABASE_PROJECT_ID="vbczmnoselectzxxuoap"
-VITE_SUPABASE_PUBLISHABLE_KEY="sb_publishable_-b_3g3ccLS32wKZDWOahMg_tSoD6oDM"
-VITE_SUPABASE_URL="https://c--9b419d3e-0546-4e34-890a-f90cec875afd-prod.lovable.cloud"
+SUPABASE_PROJECT_ID=
+SUPABASE_PUBLISHABLE_KEY=
+SUPABASE_URL=
+VITE_SUPABASE_PROJECT_ID=
+VITE_SUPABASE_PUBLISHABLE_KEY=
+VITE_SUPABASE_URL=
 AI_GATEWAY_KEY=
 LOVABLE_API_KEY=
 ELEVENLABS_API_KEY=
