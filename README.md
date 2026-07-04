@@ -1,33 +1,81 @@
-# Aptivo
+# Aptivo CV
 
-> AI-powered CV tailoring that turns your existing CV plus any job description into a truthful, ATS-optimized application in seconds.
+Aptivo is a TanStack Start app for tailoring a CV to a job description with Supabase auth, Supabase-backed storage, and AI Gateway-powered text generation/OCR.
 
-<video src="public/aptivo-demo.mp4" controls>
+## Demo
 
-**[Live site](https://aptivocv.lovable.app)**
+🎥 **Demo Video**
 
----
+[Watch Aptivo Demo](https://github.com/RanaAmmarAhmad/aptivocv/blob/main/public/aptivo-demo.mp4)
 
-## The problem
+> GitHub README files do not reliably support embedded video playback from repository files. Click the link above to view the demo.
 
-Most job seekers send the same generic CV to dozens of roles. Generic CVs get filtered out by ATS and never reach a human. Rewriting one for every application is tedious, and AI "enhancers" often invent skills the candidate never had.
+## Tech Stack
 
-## The solution
+* TanStack Start
+* React 19
+* Vite
+* TypeScript
+* Supabase-compatible backend
+* AI Gateway for generation and OCR
 
-Aptivo keeps your experience honest. Upload your CV once, paste any job description, and get a complete, tailored application that:
+## Local Setup
 
-- Mirrors keywords from the JD for ATS readability
-- Reframes your real skills to match the role
-- Never invents experience, titles, or numbers
-- Outputs a clean, six-section response plus a cover letter
-- Exports to PDF or DOCX
+### 1. Install dependencies
 
-## How it works
+```bash
+npm install
+```
 
-1. **Upload your CV** — PDF, DOCX, or plain text. Parsed in the browser, then structured with AI once.
-2. **Paste a job description** — Each JD becomes a new tailored application in the same thread.
-3. **Confirm & generate** — Review extracted details, then generate an ATS-optimized response in ~4 seconds.
-4. **Rewrite or export** — Fine-tune tone/length with one click, then download the final file.
+### 2. Configure environment
 
-## What you get every time
+Create a `.env.local` at the project root with:
 
+```env
+SUPABASE_PROJECT_ID=
+SUPABASE_PUBLISHABLE_KEY=
+SUPABASE_URL=
+VITE_SUPABASE_PROJECT_ID=
+VITE_SUPABASE_PUBLISHABLE_KEY=
+VITE_SUPABASE_URL=
+AI_API_KEY=
+ELEVENLABS_API_KEY=
+```
+
+Notes:
+
+* `AI_API_KEY` is required for CV tailoring and OCR server functions.
+* `ELEVENLABS_API_KEY` is only needed if voice features are used.
+
+### 3. Run the app
+
+```bash
+npm run dev
+```
+
+The dev server runs on:
+
+* http://localhost:8080
+
+## Build and Preview
+
+```bash
+npm run build
+npm run preview
+```
+
+## Important Environment Notes
+
+* Google sign-in requires `http://localhost:8080/**` to be added to Supabase Auth redirect URLs.
+* `SUPABASE_SERVICE_ROLE_KEY` is only needed for admin/quota paths in the server-side Supabase client. Normal auth and landing-page flows work without it.
+* The AI API key must come from the Lovable Cloud dashboard. Without it, generation endpoints return `Missing AI_API_KEY`.
+
+## Project Structure
+
+* `src/routes/` contains the file-based TanStack Start routes.
+* `src/lib/` contains server functions for CV parsing, generation, OCR, and exports.
+* `src/integrations/supabase/` contains the Supabase client and auth middleware.
+
+## License
+
+No license file is included yet.
