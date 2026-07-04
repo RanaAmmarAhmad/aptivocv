@@ -4,7 +4,7 @@ Aptivo is a TanStack Start app for tailoring a CV to a job description with Supa
 
 ## Demo
 
-<video controls src="public/aptivo-demo.mp4" poster="public/aptivo-demo-poster.jpg" style="width:100%; border-radius:16px;">
+<video controls src="[public/aptivo-demo.mp4](https://github.com/RanaAmmarAhmad/aptivocv/blob/main/public/aptivo-demo.mp4)"  style="width:100%; border-radius:16px;">
   Your browser does not support the video tag.
 </video>
 
@@ -38,13 +38,13 @@ VITE_SUPABASE_PUBLISHABLE_KEY=
 VITE_SUPABASE_URL=
 AI_GATEWAY_KEY=
 LOVABLE_API_KEY=
-ELEVENLABS_API_KEY=
+AI_API_KEY=
 ```
 
 Notes:
 
 - `AI_GATEWAY_KEY` is required for CV tailoring and OCR server functions.
-- `LOVABLE_API_KEY` is kept only as a fallback name in some code paths.
+- `AI_API_KEY` is kept only as a fallback name in some code paths.
 - `ELEVENLABS_API_KEY` is only needed if voice features are used.
 
 ### 3. Run the app
