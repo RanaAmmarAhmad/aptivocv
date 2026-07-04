@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Disallow: /auth
+Disallow: /chat/
+Disallow: /_authenticated/
+
+Sitemap: https://aptivoco.eu.cc/sitemap.xml

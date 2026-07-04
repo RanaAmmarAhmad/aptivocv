@@ -1,0 +1,14 @@
+# Aptivo
+
+> AI-powered CV tailoring that turns your existing CV plus any job description into a truthful, ATS-optimized application in seconds.
+
+Aptivo never fabricates experience — every tailored application is regenerated from your uploaded CV. Export to PDF or DOCX.
+
+## Pages
+
+- [Home](/): Product overview, demo video, features, and FAQ.
+- [Sign in](/auth): Create an account or sign in to start tailoring.
+
+## Optional
+
+- [FAQ](/#faq): Answers about honesty, ATS formatting, supported files, and rewrites.
