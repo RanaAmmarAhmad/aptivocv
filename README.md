@@ -4,7 +4,7 @@ Aptivo is a TanStack Start app for tailoring a CV to a job description with Supa
 
 ## Demo
 
-<video controls src="[public/aptivo-demo.mp4](https://github.com/RanaAmmarAhmad/aptivocv/blob/main/public/aptivo-demo.mp4)"  style="width:100%; border-radius:16px;">
+<video controls src="public/aptivo-demo.mp4)"  style="width:100%; border-radius:16px;">
   Your browser does not support the video tag.
 </video>
 
